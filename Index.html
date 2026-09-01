@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Advance Birthday Wishes Deepu ❤️</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    background:#fff4d6;
+    color:#3d3030;
+    overflow-x:hidden;
+}
+
+/* Floating hearts */
+
+.heart{
+    position:fixed;
+    font-size:25px;
+    animation:float 6s linear infinite;
+    z-index:5;
+    pointer-events:none;
+}
+
+@keyframes float{
+    0%{
+        transform:translateY(100vh) rotate(0deg);
+        opacity:0;
+    }
+    20%{opacity:1;}
+    100%{
+        transform:translateY(-10vh) rotate(360deg);
+        opacity:0;
+    }
+}
+
+/* Pages */
+
+section{
+    min-height:100vh;
+    padding:50px 20px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero{
+    background:
+    radial-gradient(circle at 20% 20%,#ffd8e5 0 8%,transparent 9%),
+    radial-gradient(circle at 80% 70%,#c9f2ff 0 8%,transparent 9%),
+    #fff4d6;
+}
+
+.small{
+    font-size:14px;
+    letter-spacing:3px;
+    color:#777;
+    margin-bottom:15px;
+}
+
+h1{
+    font-size:clamp(40px,11vw,75px);
+    color:#e94b64;
+    text-shadow:4px 4px 0 #fff;
+}
+
+h2{
+    font-size:clamp(30px,8vw,50px);
+    color:#e94b64;
+    margin-bottom:20px;
+}
+
+p{
+    font-size:18px;
+    line-height:1.8;
+    max-width:650px;
+}
+
+button{
+    margin-top:25px;
+    padding:15px 28px;
+    border:0;
+    border-radius:30px;
+    background:#e94b64;
+    color:white;
+    font-size:17px;
+    font-family:inherit;
+    cursor:pointer;
+    box-shadow:0 7px 0 #b92f47;
+}
+
+button:active{
+    transform:translateY(5px);
+    box-shadow:0 2px 0 #b92f47;
+}
+
+/* Cartoon area */
+
+.characters{
+    display:flex;
+    justify-content:center;
+    align-items:end;
+    gap:45px;
+    margin:30px 0;
+}
+
+.character{
+    position:relative;
+    width:130px;
+    height:180px;
+}
+
+/* Shinchan style */
+
+.shinchan .head{
+    width:100px;
+    height:90px;
+    background:#f4b083;
+    border:4px solid #333;
+    border-radius:48% 48% 45% 45%;
+    position:absolute;
+    left:15px;
+    top:10px;
+}
+
+.shinchan .hair{
+    position:absolute;
+    width:90px;
+    height:30px;
+    background:#222;
+    left:20px;
+    top:0;
+    border-radius:50% 50% 10% 10%;
+}
+
+.shinchan .body{
+    position:absolute;
+    width:90px;
+    height:80px;
+    background:#ef4040;
+    border:4px solid #333;
+    left:20px;
+    top:95px;
+    border-radius:15px;
+}
+
+.shinchan .eyes{
+    position:absolute;
+    top:43px;
+    left:38px;
+    font-size:20px;
+    letter-spacing:15px;
+}
+
+/* Kazama style */
+
+.kazama .head{
+    width:100px;
+    height:90px;
+    background:#f4b083;
+    border:4px solid #333;
+    border-radius:50%;
+    position:absolute;
+    left:15px;
+    top:10px;
+}
+
+.kazama .hair{
+    position:absolute;
+    width:105px;
+    height:48px;
+    background:#151515;
+    left:12px;
+    top:0;
+    border-radius:60% 60% 20% 20%;
+}
+
+.kazama .body{
+    position:absolute;
+    width:90px;
+    height:80px;
+    background:#55a9e8;
+    border:4px solid #333;
+    left:20px;
+    top:95px;
+    border-radius:15px;
+}
+
+.kazama .eyes{
+    position:absolute;
+    top:43px;
+    left:38px;
+    font-size:20px;
+    letter-spacing:15px;
+}
+
+.label{
+    position:absolute;
+    bottom:-25px;
+    width:100%;
+    font-weight:bold;
+}
+
+/* Countdown */
+
+.countdown{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:10px;
+    width:min(95%,600px);
+    margin:25px auto;
+}
+
+.timebox{
+    background:white;
+    border:3px solid #333;
+    border-radius:18px;
+    padding:18px 5px;
+    box-shadow:5px 5px 0 #f2b6c2;
+}
+
+.timebox span{
+    display:block;
+    font-size:32px;
+    font-weight:bold;
+    color:#e94b64;
+}
+
+.timebox small{
+    font-size:12px;
+}
+
+/* Message card */
+
+.card{
+    background:#ffffffdd;
+    border:3px dashed #f19aaa;
+    border-radius:25px;
+    padding:30px;
+    max-width:700px;
+    margin:15px;
+    box-shadow:0 10px 30px #00000012;
+}
+
+/* Friendship */
+
+.friendship{
+    background:#dff7ff;
+}
+
+.friendship .card{
+    background:#ffffff;
+}
+
+/* Song */
+
+.song{
+    background:#fff0f5;
+}
+
+.music-disc{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    background:#e94b64;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:50px;
+    animation:spin 4s linear infinite;
+}
+
+@keyframes spin{
+    to{transform:rotate(360deg);}
+}
+
+/* Final */
+
+.final{
+    min-height:100vh;
+    background:#ffcfdf;
+}
+
+.final h2{
+    font-size:clamp(38px,10vw,65px);
+}
+
+.signature{
+    margin-top:30px;
+    font-size:24px;
+    color:#8c4050;
+}
+
+.note{
+    margin-top:25px;
+    font-size:13px;
+    color:#777;
+}
+
+/* Mobile */
+
+@media(max-width:500px){
+
+    .characters{
+        gap:10px;
+        transform:scale(.85);
+    }
+
+    .countdown{
+        gap:6px;
+    }
+
+    .timebox{
+        padding:12px 3px;
+    }
+
+    .timebox span{
+        font-size:25px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+
+<!-- FLOATING HEARTS -->
+
+<div class="heart" style="left:10%;animation-delay:0s;">❤️</div>
+<div class="heart" style="left:30%;animation-delay:2s;">💗</div>
+<div class="heart" style="left:50%;animation-delay:4s;">💕</div>
+<div class="heart" style="left:70%;animation-delay:1s;">❤️</div>
+<div class="heart" style="left:90%;animation-delay:3s;">💖</div>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="small">
+A LITTLE SURPRISE FROM SWE
+</div>
+
+<div class="characters">
+
+<div class="character shinchan">
+
+<div class="head"></div>
+<div class="hair"></div>
+<div class="eyes">• •</div>
+<div class="body"></div>
+
+<div class="label">
+Shinchan 😜
+</div>
+
+</div>
+
+
+<div style="font-size:45px;margin-bottom:80px;">
+❤️
+</div>
+
+
+<div class="character kazama">
+
+<div class="head"></div>
+<div class="hair"></div>
+<div class="eyes">• •</div>
+<div class="body"></div>
+
+<div class="label">
+Kazama 😎
+</div>
+
+</div>
+
+</div>
+
+
+<div class="small">
+BEFORE THE BIG DAY...
+</div>
+
+<h1>
+Advance<br>
+Birthday Wishes!
+</h1>
+
+<p>
+For my favourite Yaanakaradi 🐘❤️
+</p>
+
+<button onclick="goTo('countdown')">
+Open Your Surprise 🎁
+</button>
+
+</section>
+
+
+
+<!-- COUNTDOWN -->
+
+<section id="countdown">
+
+<div class="small">
+YOUR SPECIAL DAY IS COMING...
+</div>
+
+<h2>
+Deepu's Birthday 🎂
+</h2>
+
+<p>
+<strong>29 September 2026</strong>
+</p>
+
+<div class="countdown">
+
+<div class="timebox">
+<span id="days">28</span>
+<small>DAYS</small>
+</div>
+
+<div class="timebox">
+<span id="hours">00</span>
+<small>HOURS</small>
+</div>
+
+<div class="timebox">
+<span id="minutes">00</span>
+<small>MINUTES</small>
+</div>
+
+<div class="timebox">
+<span id="seconds">00</span>
+<small>SECONDS</small>
+</div>
+
+</div>
+
+<div class="card">
+
+<p>
+🎀 <strong>This much days to go...</strong> 🎀
+<br><br>
+
+Until the day a beautiful soul was born.
+<br><br>
+
+And yes...
+I'm wishing you early because
+I couldn't wait until September 29. 😂❤️
+</p>
+
+</div>
+
+</section>
+
+
+
+<!-- ABOUT DEEPU -->
+
+<section>
+
+<div class="small">
+THIS IS FOR YOU
+</div>
+
+<h2>
+Dear Deepu... 🌷
+</h2>
+
+<div class="card">
+
+<p>
+
+You're not just someone who motivates people.
+
+<br><br>
+
+You're someone who makes people believe
+that they can get through things.
+
+<br><br>
+
+You listen.
+You care.
+You motivate.
+You give love.
+You make people smile.
+
+<br><br>
+
+And sometimes I wonder...
+
+<strong>
+Who takes care of the girl
+who takes care of everyone?
+</strong>
+
+</p>
+
+</div>
+
+</section>
+
+
+
+<!-- FRIENDSHIP -->
+
+<section class="friendship">
+
+<div class="small">
+A LITTLE TRUTH
+</div>
+
+<h2>
+You're Special ❤️
+</h2>
+
+<div class="card">
+
+<p>
+
+You know what's funny?
+
+<br><br>
+
+You probably don't realise
+how many people feel better
+just because you're around.
+
+<br><br>
+
+You're the kind of person
+who can make someone feel
+less alone.
+
+<br><br>
+
+And for me...
+
+<br><br>
+
+<strong>
+You have healed parts of me
+that you never even broke.
+</strong>
+
+</p>
+
+</div>
+
+</section>
+
+
+
+<!-- SONG -->
+
+<section class="song">
+
+<div class="small">
+A SONG FOR YOU 🎵
+</div>
+
+<div class="music-disc">
+🎵
+</div>
+
+<h2>
+Our Little Song ❤️
+</h2>
+
+<p>
+Press play and listen while reading this website.
+</p>
+
+<audio id="song" loop>
+<source src="birthday-song.mp3" type="audio/mpeg">
+</audio>
+
+<button onclick="playSong()">
+🎵 Play Our Song
+</button>
+
+<p class="note">
+Upload your MP3 as <strong>birthday-song.mp3</strong>
+to this repository.
+</p>
+
+</section>
+
+
+
+<!-- MESSAGE -->
+
+<section>
+
+<div class="small">
+THINGS I WANT YOU TO REMEMBER
+</div>
+
+<h2>
+Don't Forget This... 🫂
+</h2>
+
+<div class="card">
+
+<p>
+
+You don't always have to be strong.
+
+<br><br>
+
+You don't always have to motivate everyone.
+
+<br><br>
+
+You don't always have to pretend
+that everything is okay.
+
+<br><br>
+
+Sometimes you can be tired.
+Sometimes you can cry.
+Sometimes you can need someone too.
+
+<br><br>
+
+<strong>
+And that's okay.
+</strong>
+
+<br><br>
+
+You deserve the same kindness,
+love and care that you give everyone else.
+
+</p>
+
+</div>
+
+</section>
+
+
+
+<!-- FINAL -->
+
+<section class="final">
+
+<div style="font-size:65px;">
+🎂❤️
+</div>
+
+<div class="small">
+29 • 09 • 2026
+</div>
+
+<h2>
+Happy Birthday in Advance,
+Deepu! 🥹❤️
+</h2>
+
+<p>
+
+I know your birthday isn't here yet...
+
+<br><br>
+
+But why wait for one particular day
+to tell someone how special they are?
+
+<br><br>
+
+So here's my early wish...
+
+<br><br>
+
+<strong>
+May you find people who stay.
+<br>
+May you receive the love you give.
+<br>
+May your dreams come true.
+<br>
+And may you always remember
+how precious you are.
+</strong>
+
+</p>
+
+<div class="signature">
+
+With lots of love,<br>
+
+<strong>
+Your Swe ❤️
+</strong>
+
+<br><br>
+
+🐘 My Yaanakaradi 🐘
+
+</div>
+
+<div class="note">
+28 days to go... and counting. ⏳❤️
+</div>
+
+</section>
+
+
+
+<script>
+
+/* Smooth scrolling */
+
+function goTo(id){
+
+document.getElementById(id).scrollIntoView({
+behavior:"smooth"
+});
+
+}
+
+
+/* Countdown */
+
+const birthday = new Date("September 29, 2026 00:00:00").getTime();
+
+function updateCountdown(){
+
+const now = new Date().getTime();
+
+const distance = birthday - now;
+
+if(distance <= 0){
+
+document.getElementById("days").innerText = "00";
+document.getElementById("hours").innerText = "00";
+document.getElementById("minutes").innerText = "00";
+document.getElementById("seconds").innerText = "00";
+
+return;
+
+}
+
+const days = Math.floor(distance / (1000*60*60*24));
+
+const hours = Math.floor(
+(distance % (1000*60*60*24))
+/ (1000*60*60)
+);
+
+const minutes = Math.floor(
+(distance % (1000*60*60))
+/ (1000*60)
+);
+
+const seconds = Math.floor(
+(distance % (1000*60))
+/ 1000
+);
+
+document.getElementById("days").innerText =
+String(days).padStart(2,"0");
+
+document.getElementById("hours").innerText =
+String(hours).padStart(2,"0");
+
+document.getElementById("minutes").innerText =
+String(minutes).padStart(2,"0");
+
+document.getElementById("seconds").innerText =
+String(seconds).padStart(2,"0");
+
+}
+
+updateCountdown();
+
+setInterval(updateCountdown,1000);
+
+
+/* Music */
+
+function playSong(){
+
+const song = document.getElementById("song");
+
+if(song.paused){
+
+song.play();
+
+}else{
+
+song.pause();
+
+}
+
+}
+
+</script>
+
+</body>
+  </html>
